@@ -1,28 +1,32 @@
 
-import { Truck } from "lucide-react";
-
 const ServiceCard = ({ 
-  icon: Icon, 
+  imagePath,
   title, 
   description, 
   cta 
 }: { 
-  icon: React.ElementType; 
+  imagePath: string;
   title: string; 
   description: string; 
   cta: string; 
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg hover:translate-y-[-5px] flex flex-col">
-      <div className="mb-4">
-        <Icon className="h-12 w-12 text-brand-red" strokeWidth={1.5} />
+    <div className="group relative overflow-hidden rounded-2xl bg-white transition-all duration-300 hover:shadow-xl">
+      <div className="aspect-[16/9] overflow-hidden">
+        <img 
+          src={imagePath}
+          alt={title}
+          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
       </div>
-      <h3 className="text-xl font-bold text-brand-blue mb-3 font-poppins">{title}</h3>
-      <p className="text-gray-600 mb-4 flex-grow">{description}</p>
-      <button className="text-brand-red font-medium flex items-center group">
-        {cta} 
-        <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
-      </button>
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-3 font-poppins">{title}</h3>
+        <p className="text-gray-600 mb-4">{description}</p>
+        <button className="text-brand-red font-medium flex items-center group">
+          {cta}
+          <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
+        </button>
+      </div>
     </div>
   );
 };
@@ -30,25 +34,25 @@ const ServiceCard = ({
 const ServicesSection = () => {
   const services = [
     {
-      icon: Truck,
+      imagePath: "https://images.unsplash.com/photo-1586191582056-b7f0eafa4b30",
       title: "Flatbed Trailer Transport",
       description: "Built for Heavy-Duty Hauls. From construction steel to industrial generators, our flatbed trailers are ready for the long haul.",
       cta: "Get Flatbed Pricing"
     },
     {
-      icon: Truck,
+      imagePath: "https://images.unsplash.com/photo-1586191582039-36417d1b49bf",
       title: "Lowbed Trailer Transport",
       description: "Low Clearance, High Performance. Specialized for oversized machinery and heavy equipment. Perfect for on-site delivery.",
       cta: "Book a Lowbed Job"
     },
     {
-      icon: Truck,
+      imagePath: "https://images.unsplash.com/photo-1586191582083-34b593f96b45",
       title: "Temperature-Controlled Trailers",
       description: "Cold Chain, Always Maintained. We move perishable goods in climate-optimized 40-foot reefers — ideal for food and pharma.",
       cta: "Send Us Your Requirements"
     },
     {
-      icon: Truck,
+      imagePath: "https://images.unsplash.com/photo-1586191582040-63d0f6fe54d9",
       title: "UAE/GCC-Wide Trucking",
       description: "Wherever You Need It, We're Already Rolling. Full-service trucking across Dubai, Sharjah, Abu Dhabi, and into KSA & Oman.",
       cta: "Request Cross-GCC Quote"
@@ -59,7 +63,7 @@ const ServicesSection = () => {
     <section className="py-20 bg-gray-50" id="services">
       <div className="container mx-auto px-4 md:px-8">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-4 font-poppins">Services We Offer</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-poppins">Services We Offer</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Professional logistics solutions tailored to your business needs
           </p>
@@ -69,7 +73,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <ServiceCard 
               key={index}
-              icon={service.icon}
+              imagePath={service.imagePath}
               title={service.title}
               description={service.description}
               cta={service.cta}
