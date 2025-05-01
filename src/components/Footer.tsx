@@ -23,12 +23,14 @@ const Footer = () => {
           </div>
           
           <div className="md:col-span-3">
-            <h4 className="text-lg font-bold mb-4 font-poppins">Services</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Flatbed Trailer Transport</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Lowbed Trailer Transport</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Temperature-Controlled Trailers</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">UAE/GCC-Wide Trucking</a></li>
+            <h4 className="text-lg font-bold mb-4 font-poppins">Industries We Serve</h4>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Agricultural Production</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Material Suppliers</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">FMCG</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Frozen Food and Beverages</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Pharmaceutical Companies</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Event Management</a></li>
             </ul>
           </div>
           
@@ -37,16 +39,16 @@ const Footer = () => {
             <ul className="space-y-3 mb-6">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 mt-1 text-brand-red" />
-                <span className="text-gray-300">Dubai, United Arab Emirates</span>
+                <span className="text-gray-300">Omair Bin Yousuf Properties - Office No. B – M25 - Musaffah - M15 - Abu Dhabi - UAE</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-brand-red" />
-                <span className="text-gray-300">+971 XXX XXX XXX</span>
+                <span className="text-gray-300">+971 50 2636880 & +971 56 7708282</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-brand-red" />
-                <a href="mailto:sales@afridiexpresstransport.com" className="text-gray-300 hover:text-white transition-colors">
-                  sales@afridiexpresstransport.com
+                <a href="mailto:afriditransportsolutions@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+                  afriditransportsolutions@gmail.com
                 </a>
               </li>
             </ul>
