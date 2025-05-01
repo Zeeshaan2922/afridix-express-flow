@@ -1,0 +1,48 @@
+
+<div class="form-grid">
+    <div class="form-group">
+        <label for="fromLocation">From Location</label>
+        [text* fromLocation id:fromLocation placeholder "e.g., Dubai"]
+    </div>
+    
+    <div class="form-group">
+        <label for="toLocation">To Location</label>
+        [text* toLocation id:toLocation placeholder "e.g., Abu Dhabi"]
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="vehicleType">Vehicle Type</label>
+    [select* vehicleType id:vehicleType "Select vehicle type" "Flatbed Trailer" "Lowbed Trailer" "Curtain Trailer" "Temperature-Controlled (Reefer)" "Chiller Truck" "Chiller Van" "Pickup Truck"]
+</div>
+
+<div class="form-grid">
+    <div class="form-group">
+        <label for="numberOfVehicles">Number of Vehicles</label>
+        [number* numberOfVehicles id:numberOfVehicles min:1 placeholder "e.g., 1"]
+    </div>
+    
+    <div class="form-group">
+        <label for="desiredDate">Desired Date</label>
+        [date* desiredDate id:desiredDate]
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="yourName">Your Name</label>
+    [text* your-name id:yourName placeholder "Enter your full name"]
+</div>
+
+<div class="form-group">
+    <label for="yourEmail">Your Email</label>
+    [email* your-email id:yourEmail placeholder "Enter your email address"]
+</div>
+
+<div class="form-group">
+    <label for="yourPhone">Phone Number</label>
+    [tel* your-phone id:yourPhone placeholder "Enter your phone number"]
+</div>
+
+<div class="form-group">
+    [submit class:form-submit "Get Instant Quote"]
+</div>

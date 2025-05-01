@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
 
-## Project info
+# Afridi Express Transport WordPress Theme
 
-**URL**: https://lovable.dev/projects/65bc415e-6508-40fa-808a-347660a3b680
+This is a custom WordPress theme for Afridi Express Transport LLC, a logistics and transportation company based in the UAE.
 
-## How can I edit this code?
+## Theme Installation
 
-There are several ways of editing your application.
+1. Download the theme files
+2. Upload the theme folder to your WordPress installation in `/wp-content/themes/`
+3. Activate the theme through the WordPress admin panel
 
-**Use Lovable**
+## Required Plugins
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/65bc415e-6508-40fa-808a-347660a3b680) and start prompting.
+For best functionality, please install the following plugins:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Contact Form 7** - For the quote request form
+- **CMB2** - For custom metaboxes and fields
+- **Classic Editor** - Recommended for easier content editing
+- **Yoast SEO** - For search engine optimization
+- **WP Google Maps** - For enhanced map functionality
+- **Advanced Custom Fields** (optional) - For additional custom fields
 
-**Use your preferred IDE**
+## Theme Setup
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 1. Homepage Setup
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Create a new page and title it "Home"
+2. Set the page template to "Front Page" in the Page Attributes section
+3. Go to Settings > Reading and set "Your homepage displays" to "A static page"
+4. Select your "Home" page as the homepage
 
-Follow these steps:
+### 2. Services Setup
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Navigate to Services in the WordPress admin menu
+2. Add new services with relevant titles, descriptions, and featured images
+3. Fill in the custom fields for each service:
+   - Short Description: Brief overview shown on the homepage
+   - Hover Description: Text shown on hover in the services grid
+   - CTA Text: Call to action button text
+   - CTA Link: URL for the call to action
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 3. FAQs Setup
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. Navigate to FAQs in the WordPress admin menu
+2. Add new FAQ items with the question as the title and answer in the content area
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### 4. Menu Setup
 
-**Edit a file directly in GitHub**
+1. Go to Appearance > Menus
+2. Create a Primary Menu with your main navigation links
+3. Create Footer Menu 1 and Footer Menu 2 for footer navigation
+4. Assign the menus to their respective locations
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 5. Contact Form Setup
 
-**Use GitHub Codespaces**
+1. Install and activate Contact Form 7
+2. Create a new form using the template provided in `quote-form-template.html`
+3. Copy the generated shortcode
+4. Update the shortcode in `front-page.php` (replace `[contact-form-7 id="123" title="Quote Request Form"]` with your shortcode)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Customization
 
-## What technologies are used for this project?
+- **Theme Colors**: Edit the CSS variables in `style.css` to change the color scheme
+- **Logo**: Upload your custom logo in Appearance > Customize > Site Identity
+- **Homepage Content**: Edit homepage sections through the custom fields in the page editor
 
-This project is built with:
+## Support
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/65bc415e-6508-40fa-808a-347660a3b680) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+For theme support, please contact the theme developer.
